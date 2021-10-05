@@ -1,4 +1,5 @@
 import io.javalin.Javalin;
+import io.javalin.plugin.rendering.vue.VueComponent;
 
 public class Application{
 
@@ -9,6 +10,6 @@ public class Application{
 
         //views/
         //api//
-
+        app.get("/", new VueComponent("login"));
     }
 }
