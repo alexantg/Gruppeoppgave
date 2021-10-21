@@ -8,8 +8,8 @@ public class Application{
         Javalin app = Javalin.create().start(7000);
         app.config.enableWebjars();
 
-        //views/
-        //api//
+        //Views/
         app.get("/", new VueComponent("login"));
+        app.get("/admin/", new VueComponent("admin-front"));
     }
 }

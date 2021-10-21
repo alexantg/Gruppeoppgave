@@ -1,24 +1,32 @@
-<template id ="login">
-
-  <center><h1>Login page</h1></center>
-  <p><a class="button" href="">User</a></p>
-  <p><a class="button" href="">Admin</a></p>
+<template id="login">
+  <div id="app">
+    <center><h1>Login Page</h1>
+    <p><a class="button" href="admin/">Admin</a></p>
+    <br>
+    <p><a class="button" href="">User</a></p>
+    <br>
+    <p><a class="button" href="">End User</a></p>
+    </center>
+  </div>
 
 </template>
 
+
 <script>
-  Vue.component("login", {template:"#login"});
+Vue.component("login", {template: "#login"});
 </script>
 
+
 <style>
-  h1 {
-    color: black;
-  }
-  .button {
-    padding: 15px;
-    margin: 10px;
-    border: 2px solid black;
-    color: black;
-    border-radius: 15px;
-  }
+ h1 {
+  color: black;
+}
+ .button {
+   text-decoration: none;
+   padding: 10px;
+   margin: 10px;
+   border: 1px solid black;
+   color: black;
+   border-radius: 15px;
+ }
 </style>
