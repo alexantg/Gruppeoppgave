@@ -11,5 +11,6 @@ public class Application{
         //Views/
         app.get("/", new VueComponent("login"));
         app.get("/admin/", new VueComponent("admin-front"));
+        app.get("/user/", new VueComponent(""));
     }
 }

@@ -12,4 +12,7 @@ Vue.component("admin-front", {template: "admin-front"});
 h1 {
   color: black;
 }
+p{
+
+}
 </style>
