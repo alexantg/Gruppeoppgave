@@ -10,7 +10,9 @@ public class Application{
 
         //Views/
         app.get("/", new VueComponent("login"));
-        app.get("/admin/", new VueComponent("admin-front"));
-        app.get("/user/", new VueComponent(""));
+        app.get("/admin/", new VueComponent("mainpage-admin"));
+        app.get("/user/", new VueComponent("mainpage-user"));
+        app.get("/enduser/", new VueComponent("mainpage-enduser"));
+
     }
 }

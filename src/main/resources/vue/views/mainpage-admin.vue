@@ -1,12 +1,12 @@
-<template id="admin-front">
+<template id="mainpage-admin">
   <div class="app">
-    <h1>Admin</h1>
+   <center> <h1>Admin</h1>
     <p>Test paragraph</p>
-
+   </center>
     </div>
 </template>
 <script>
-Vue.component("admin-front", {template: "admin-front"});
+Vue.component("mainpage-admin", {template: "#mainpage-admin"});
 </script>
 <style>
 h1 {

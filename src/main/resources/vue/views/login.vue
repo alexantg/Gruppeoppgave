@@ -3,9 +3,9 @@
     <center><h1>Login Page</h1>
     <p><a class="button" href="admin/">Admin</a></p>
     <br>
-    <p><a class="button" href="">User</a></p>
+    <p><a class="button" href="user/">User</a></p>
     <br>
-    <p><a class="button" href="">End User</a></p>
+    <p><a class="button" href="enduser/">End User</a></p>
     </center>
   </div>
 
