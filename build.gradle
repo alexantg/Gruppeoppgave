@@ -18,7 +18,7 @@ dependencies {
     implementation 'org.slf4j:slf4j-simple:1.7.26'
     implementation 'org.webjars.npm:vue:2.6.10'
 
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310
+    //https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310
     implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.10.3'
 
 }

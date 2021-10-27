@@ -1,13 +1,18 @@
-<template>
-
+<template id="mainpage-enduser">
+  <div class="app">
+  <center><h1>End User</h1>
+    <p>Test paragraph</p>
+  </center>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "main_page_end_user"
-}
+Vue.component("mainpage-enduser", {template: "#mainpage-enduser"});
 </script>
-
-<style scoped>
-
+<style>
+h1 {
+  color: black;
+}
+p{
+}
 </style>

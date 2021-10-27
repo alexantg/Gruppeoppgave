@@ -9,7 +9,7 @@
 
 <script>
 Vue.component("mainpage-user", {template: "#mainpage-user"});
-</script>
+</script>l
 <style>
 h1 {
   color: black;
