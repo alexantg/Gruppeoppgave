@@ -3,14 +3,36 @@
    <center> <h1>Admin</h1>
      <form class="form">
     <h2>Registrer ny antikkbutikk</h2>
-     <input placeholder="Butikknavn">
+
+       <p>
+       <label for="butikknavn">Butikknavn</label>
+       <input name="butikknavn" id="butikknavn">
+       </p>
+
+       <p>
+       <label for="email">E-mail</label>
+       <input name="email" id="email">
+       </p>
+
+       <p>
+       <label for="fakturaadresse">Fakturaadresse</label>
+       <input name="fakturaadresse" id="fakturaadresse">
+       </p>
+
+       <p>
+         <input type="submit" value="Register">
+       </p>
+
      </form>
    </center>
     </div>
 </template>
+
 <script>
-Vue.component("mainpage-admin", {template: "#mainpage-admin"});
+  Vue.component("mainpage-admin", {
+    template: "#mainpage-admin"});
 </script>
+
 <style>
 h1 {
   color: black;

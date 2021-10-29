@@ -6,6 +6,9 @@ public class Item {
     private double price;
     private String pictureUrl;
 
+    public Item() {
+    }
+
     public Item(String name, String description, double price, String pictureUrl) {
         this.name = name;
         this.description = description;

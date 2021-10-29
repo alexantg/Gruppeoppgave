@@ -27,9 +27,12 @@
    </center>
     </div>
 </template>
+
 <script>
-Vue.component("mainpage-admin", {template: "#mainpage-admin"});
+  Vue.component("mainpage-admin", {
+    template: "#mainpage-admin"});
 </script>
+
 <style>
 h1 {
   color: black;
