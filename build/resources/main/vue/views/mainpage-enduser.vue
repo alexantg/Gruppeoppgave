@@ -6,13 +6,11 @@
   </div> -->
   <div>
     <ul class="navbar">
-      <li class="navbar-list"><a class="active" href="#home">Home</a></li>
-      <li class="navbar-list"><a href="#news">News</a></li>
-      <li class="navbar-list">><a href="#contact">Contact</a></li>
-      <li class="navbar-list"><a href="#about">About</a></li>
+      <li class="navbar-list"><a class="active" href="/">Homepage</a></li>
+      <li class="navbar-list"><a href="#news">Placeholder1</a></li>
+      <li class="navbar-list"><a href="#contact">Placeholder2</a></li>
+      <li class="navbar-list" style="float:right"><a href="#about">Placeholder3</a></li>
     </ul>
-  </div>
-  <div>
     <ul class="items-overview-list">
       <li v-for="item in items">
         <a :href="`/item/${item.name.trim()}`" class="link-to-item">
@@ -60,10 +58,15 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      float: left;
+    }
+    a {
+      text-decoration: none;
+      color: white;
     }
 
     body {
-      background-color: #eec174;
+      background-color: white;
     }
     p {
       text-transform: uppercase;
@@ -77,7 +80,7 @@
     .items-overview-list{
       display: flex;
       flex-wrap: wrap-reverse;
-      justify-content: left;
+      justify-content: center;
     }
 
     .items-overview-list li{
@@ -96,7 +99,7 @@
     div.single-item-container{
       overflow: hidden;
       width: 500px;
-      background-color: #5d687a;
+      background-color: #757575;
       margin: 0 auto;
       opacity: 0.96;
       text-align: center;
