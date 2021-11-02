@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "Gammel vase",
+    "description" : "Gammel vase fra 50-tallet",
+    "price" :  500,
+    "pictureUrl" : "https://bit.ly/3ErtIFH"
+  },
+  {
+    "name" : "Maleri",
+    "description" : "Gammel maleri fra en ukjent maler",
+    "price" :  2500,
+    "pictureUrl" : "https://bit.ly/2ZxjQuW"
+  }
+]
