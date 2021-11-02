@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="652f94af-257d-4049-ada4-7fdcb17bc126" name="Changes" comment="Linked login pages to main pages of each user role">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/vue/views/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/vue/views/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/vue/views/mainpage-admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/vue/views/mainpage-admin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/vue/views/mainpage-enduser.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/vue/views/mainpage-enduser.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/vue/views/mainpage-user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/vue/views/mainpage-user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/vue/views/mainpage-user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/vue/views/mainpage-user.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1z6AJMUURwVQjujNN9nVb9nc4lo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexa\OneDrive - Østfold University College\Semester 5\Software Engineering og Testing\gruppeoppgave\gruppeoppgave\src\main\resources\vue\views" />
+      <recent name="C:\Users\alexa\OneDrive - Østfold University College\Semester 5\Software Engineering og Testing\gruppeoppgave\gruppeoppgave\src\main\resources\vue" />
+      <recent name="C:\Users\alexa\OneDrive - Østfold University College\Semester 5\Software Engineering og Testing\gruppeoppgave\gruppeoppgave\src\main\resources\vue\views\User" />
+      <recent name="C:\Users\alexa\OneDrive - Østfold University College\Semester 5\Software Engineering og Testing\gruppeoppgave\gruppeoppgave\src\main\resources\vue\views\End User" />
+      <recent name="C:\Users\alexa\OneDrive - Østfold University College\Semester 5\Software Engineering og Testing\gruppeoppgave\gruppeoppgave\src\main\resources\vue\views\Admin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="antiqueSystem.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="652f94af-257d-4049-ada4-7fdcb17bc126" name="Changes" comment="" />
+      <created>1633458090438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633458090438</updated>
+      <workItem from="1633458093121" duration="363000" />
+      <workItem from="1633458471645" duration="723000" />
+      <workItem from="1633459212178" duration="2484000" />
+      <workItem from="1633535865826" duration="1000" />
+      <workItem from="1633539187377" duration="2325000" />
+      <workItem from="1633633339671" duration="473000" />
+      <workItem from="1634062726058" duration="942000" />
+      <workItem from="1634163075769" duration="64000" />
+      <workItem from="1634239778980" duration="2079000" />
+      <workItem from="1634489932520" duration="1193000" />
+      <workItem from="1634745547339" duration="9000" />
+      <workItem from="1634745665358" duration="7502000" />
+      <workItem from="1635096536492" duration="2461000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added login view">
+      <created>1633462042579</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633462042579</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added views for main pages and buttons on login page">
+      <created>1634841301985</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634841301985</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added views for main pages and buttons on login page">
+      <created>1634841326459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634841326459</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added views for main pages and buttons on login page">
+      <created>1634841570436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634841570436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Linked login pages to main pages of each user role">
+      <created>1635099018130</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635099018130</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added login view" />
+    <MESSAGE value="Added views for main pages and buttons on login page" />
+    <MESSAGE value="Linked login pages to main pages of each user role" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linked login pages to main pages of each user role" />
+  </component>
+</project>
