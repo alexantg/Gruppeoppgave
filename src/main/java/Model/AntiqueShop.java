@@ -1,11 +1,13 @@
 package Model;
 
 public class AntiqueShop {
+        private int id;
         private String name;
         private String email;
         private String address;
 
     public AntiqueShop(String name, String email, String address) {
+        this.id = id+1;
         this.name = name;
         this.email = email;
         this.address = address;
