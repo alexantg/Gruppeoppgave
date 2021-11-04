@@ -1,4 +1,4 @@
-<template id="admin-create-antiqueshop">
+<template id="admin-create-shop">
   <div className="app">
     <center><h1>Admin</h1>
       <form class="create" @submit="checkForm" :action=`/api/admin/create` method="post">
@@ -29,14 +29,8 @@
 </template>
 
 <script>
-Vue.component("admin-create-antiqueshop", {
-  template: "#admin-create-antiqueshop",
-  data: () =>({
-    butikknavn : null,
-    email: null,
-    fakturaadresse: null
-  })
-
+Vue.component("admin-create-shop", {
+  template: "#admin-create-shop"
 });
 </script>
 

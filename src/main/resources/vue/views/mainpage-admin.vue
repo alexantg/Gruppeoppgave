@@ -1,7 +1,7 @@
 <template id="mainpage-admin">
   <div class="app">
    <center> <h1>Admin</h1>
-     <p><a class="button" href="create/">Register Antique Shop</a></p>
+     <p><a class="button" href="create">Register Antique Shop</a></p>
    </center>
     </div>
 </template>
