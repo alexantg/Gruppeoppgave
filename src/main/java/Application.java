@@ -22,7 +22,7 @@ public class Application{
         app.get("/admin/", new VueComponent("mainpage-admin"));
         app.get("/user/", new VueComponent("mainpage-user"));
         app.get("/enduser/", new VueComponent("mainpage-enduser"));
-        app.get("/user/registershop", new VueComponent("user-create-shop"));
+        app.get("/user/registershop/", new VueComponent("user-create-shop"));
 
 
         app.get("api/item/", new Handler(){

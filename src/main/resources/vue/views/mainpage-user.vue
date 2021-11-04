@@ -4,7 +4,7 @@
       <h1>User</h1>
       <p><a class="button" href="admin/"></a></p>
       <br>
-      <p><a class="button" href="registershop">Registrer ny butikk</a></p>
+      <p><a class="button" href="registershop/">Registrer ny butikk</a></p>
     </center>
   </div>
 </template>
