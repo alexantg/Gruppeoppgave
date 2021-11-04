@@ -8,6 +8,4 @@ public class Auction {
     private double buyNowPrice;
     private Item item;
 
-
-
 }
