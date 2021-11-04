@@ -1,4 +1,4 @@
-package controller;
+package Controller;
 
 import Model.Item;
 import Repository.IAntiqueSystemRep;
