@@ -1,5 +1,3 @@
-package main.java;
-
 import Repository.AntiqueSystemJSONRep;
 import Controller.ItemController;
 import io.javalin.Javalin;
