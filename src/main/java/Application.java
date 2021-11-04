@@ -14,7 +14,7 @@ public class Application{
         Javalin app = Javalin.create().start(7000);
         app.config.enableWebjars();
 
-        AntiqueSystemJSONRep iAntiqueSystemJSONRep = new AntiqueSystemJSONRep("src/main/resources/items.json");
+        AntiqueSystemJSONRep iAntiqueSystemJSONRep = new AntiqueSystemJSONRep("src/main/resources/database.json");
         ItemController itemController = new ItemController(iAntiqueSystemJSONRep);
 
         //Views/

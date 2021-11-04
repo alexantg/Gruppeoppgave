@@ -1,15 +1,23 @@
-<template>
-<div>
-  <h1>Test</h1>
-</div>
+<template id="user-create-shop">
+  <div class="app">
+    <center> <h1>Create new shop</h1>
+
+    </center>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "enduser-auction"
-}
+Vue.component("user-create-shop", {
+  template: "#user-create-shop"});
 </script>
 
-<style scoped>
+<style>
+h1 {
+  color: black;
+}
+h2{
+  color: black;
+  text-decoration: underline;
+}
 
 </style>
