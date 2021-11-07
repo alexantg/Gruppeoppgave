@@ -14,8 +14,10 @@ public class Application{
         Javalin app = Javalin.create().start(7000);
         app.config.enableWebjars();
 
-        AntiqueSystemJSONRep iAntiqueSystemJSONRep = new AntiqueSystemJSONRep("src/main/resources/database.json");
+        AntiqueSystemJSONRep iAntiqueSystemJSONRep = new AntiqueSystemJSONRep("src/main/resources/db.json");
         ItemController itemController = new ItemController(iAntiqueSystemJSONRep);
+
+        iAntiqueSystemJSONRep.readShopsFromFile();
 
         //Views/
         app.get("/", new VueComponent("login"));
@@ -25,11 +27,17 @@ public class Application{
         app.get("/user/registershop/", new VueComponent("user-create-shop"));
 
 
-        app.get("api/item/", new Handler(){
+        //post
+        app.post("api/user/createshop",itemController::createShop);
+
+        //Get-requests
+        app.get("api/shops", itemController::getAllShops);
+
+      /*  app.get("api/item/", new Handler(){
             @Override
             public void handle(@NotNull Context context) throws Exception {
                 itemController.getAllItems(context);
             }
-        });
+        });*/
     }
 }

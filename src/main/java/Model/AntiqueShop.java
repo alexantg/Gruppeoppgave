@@ -6,8 +6,11 @@ public class AntiqueShop {
         private String email;
         private String address;
 
+    public AntiqueShop(){
+
+    }
+
     public AntiqueShop(String name, String email, String address) {
-        this.id = id+1;
         this.name = name;
         this.email = email;
         this.address = address;
