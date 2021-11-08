@@ -25,6 +25,7 @@ public class Application{
         app.get("/user/", new VueComponent("mainpage-user"));
         app.get("/enduser/", new VueComponent("mainpage-enduser"));
         app.get("/user/registershop/", new VueComponent("user-create-shop"));
+        app.get("/user/:shop-id", new VueComponent("user-shop-detail"));
 
 
         //post
@@ -32,6 +33,7 @@ public class Application{
 
         //Get-requests
         app.get("api/shops", itemController::getAllShops);
+        app.get("api/user/:shop-id", itemController::getShop);
 
       /*  app.get("api/item/", new Handler(){
             @Override

@@ -46,6 +46,17 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
         return shopsFromFile;
 
     }
+
+    @Override
+    public AntiqueShop getShop(String shopName){
+        for(AntiqueShop s : shopsFromFile){
+            if(s.getName().equals(shopName)) {
+                return s;
+            }
+        }
+        return null;
+    }
+
     @Override
     public ArrayList<AntiqueShop> getAllShops(){
         return shopsFromFile;

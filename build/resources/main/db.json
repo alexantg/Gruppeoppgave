@@ -6,4 +6,12 @@
   "name" : "test2",
   "email" : "testfire@gmail.com",
   "address" : "testveien 108"
+}, {
+  "name" : "test3",
+  "email" : "test@outlook.com",
+  "address" : "veien 100"
+}, {
+  "name" : "test4 ",
+  "email" : "test",
+  "address" : "test"
 } ]
