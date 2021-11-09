@@ -14,6 +14,7 @@ import java.util.HashMap;
 public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     private String fileName;
     ArrayList<AntiqueShop> shopsFromFile = new ArrayList<>();
+    ArrayList<Item> itemsFromFile = new ArrayList<>();
    // private HashMap<String, Item> itemHashMap = new HashMap<>();
 
     public AntiqueSystemJSONRep(String fileName) {
@@ -21,7 +22,7 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
        // this.itemHashMap = readFromJSON(fileName);
     }
 
-    //Print to file
+    //Print to file ------------------------------------------------------
     public void printShopsToFile(ArrayList<AntiqueShop> antiqueShopsIn){
         ObjectMapper objectMapper= new ObjectMapper();
 
@@ -32,7 +33,17 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
         }
     }
 
-    //Read from file
+    public void printItemsToFile(ArrayList<Item> itemsIn){
+        ObjectMapper objectMapper= new ObjectMapper();
+
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(fileName), itemsIn);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //Read from file -----------------------------------------------------
     public ArrayList<AntiqueShop> readShopsFromFile() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
@@ -44,6 +55,20 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
             e.printStackTrace();
         }
         return shopsFromFile;
+
+    }
+
+    public ArrayList<Item> readItemsFromFile() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JavaTimeModule());
+
+        try {
+            Item[] itemArray = objectMapper.readValue(new File(fileName), Item[].class);
+            itemsFromFile.addAll(Arrays.asList(itemArray));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return itemsFromFile;
 
     }
 
@@ -66,6 +91,12 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     public void createShop(AntiqueShop shop){
         shopsFromFile.add(shop);
         printShopsToFile(shopsFromFile);
+    }
+
+    @Override
+    public void createItem(Item newItem){
+        itemsFromFile.add(newItem);
+        printItemsToFile(itemsFromFile);
     }
 
   /*  public HashMap<String, Item> readFromJSON(String fileName) {

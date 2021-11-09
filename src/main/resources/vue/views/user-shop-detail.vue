@@ -3,6 +3,8 @@
 
     <h1>{{shop.name}}</h1>
 
+    <p><a class="button" href="additem/">Legg til ny antikvitet</a></p>
+
   </div>
 </template>
 

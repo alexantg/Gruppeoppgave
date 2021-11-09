@@ -10,5 +10,6 @@ public interface IAntiqueSystemRep {
     void createShop(AntiqueShop shop);
     ArrayList<AntiqueShop> getAllShops();
     AntiqueShop getShop(String shopName);
+    void createItem(Item newItem);
    // ArrayList<Item> getAllItems();
 }

@@ -25,11 +25,13 @@ public class Application{
         app.get("/user/", new VueComponent("mainpage-user"));
         app.get("/enduser/", new VueComponent("mainpage-enduser"));
         app.get("/user/registershop/", new VueComponent("user-create-shop"));
-        app.get("/user/:shop-id", new VueComponent("user-shop-detail"));
+        app.get("/user/:shop-id/", new VueComponent("user-shop-detail"));
+        app.get("/user/:shop.id/additem/", new VueComponent("user-add-item-to-shop"));
 
 
         //post
         app.post("api/user/createshop",itemController::createShop);
+        app.post("api/user/:shop.id/createItem", itemController::createItem);
 
         //Get-requests
         app.get("api/shops", itemController::getAllShops);

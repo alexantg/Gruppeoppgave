@@ -54,7 +54,27 @@ public class ItemController {
         address = context.formParam("address");
 
         AntiqueShop shop = new AntiqueShop(name,email,address);
-         return shop;
+        return shop;
+    }
+
+    public void createItem(Context context){
+        iAntiqueSystemRep.createItem(dataFromInputItem(context));
+        context.redirect("/user/");
+    }
+
+    public Item dataFromInputItem(Context context){
+        String name;
+        String description;
+        String pictureUrl;
+        double price;
+
+        name = context.formParam("itemName");
+        description = context.formParam("description");
+        pictureUrl = context.formParam("pictureUrl");
+        price = Double.parseDouble(context.formParam("price"));
+
+        Item newItem = new Item(name, description, price, pictureUrl);
+        return newItem;
     }
 
 }
