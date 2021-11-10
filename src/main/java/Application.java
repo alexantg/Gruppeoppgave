@@ -31,7 +31,7 @@ public class Application{
 
         //post
         app.post("api/user/createshop",itemController::createShop);
-        app.post("api/user/:shop.id/createItem", itemController::createItem);
+        app.post("api/user/:shop-id/createItem", itemController::createItem);
 
         //Get-requests
         app.get("api/shops", itemController::getAllShops);

@@ -1,17 +1,6 @@
 [ {
-  "name" : "Test",
-  "email" : "test@gmail.com",
-  "address" : "testveien 99"
-}, {
-  "name" : "test2",
-  "email" : "testfire@gmail.com",
-  "address" : "testveien 108"
-}, {
-  "name" : "test3",
-  "email" : "test@outlook.com",
-  "address" : "veien 100"
-}, {
-  "name" : "test4 ",
-  "email" : "test",
-  "address" : "test"
+  "name" : "Ur mom",
+  "description" : "Is so fat",
+  "price" : 69.0,
+  "pictureUrl" : "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/02/12/obesity.jpg?width=982&height=726&auto=webp&quality=75"
 } ]
