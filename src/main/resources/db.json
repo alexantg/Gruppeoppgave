@@ -1,6 +1,5 @@
 [ {
-  "name" : "Ur mom",
-  "description" : "Is so fat",
-  "price" : 69.0,
-  "pictureUrl" : "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/02/12/obesity.jpg?width=982&height=726&auto=webp&quality=75"
+  "name" : "Test",
+  "email" : "epost@gmail.com",
+  "address" : "testadresse 100 "
 } ]

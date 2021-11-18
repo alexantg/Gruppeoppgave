@@ -1,10 +1,12 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class AntiqueShop {
-        private int id;
         private String name;
         private String email;
         private String address;
+        private ArrayList<Item> items;
 
     public AntiqueShop(){
 
