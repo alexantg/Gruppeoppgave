@@ -3,7 +3,7 @@
 
     <h1>{{shop.name}}</h1>
 
-    <p><a class="button" :href="`/user/${shop.name.trim()}/additem/`">Legg til ny antikvitet</a></p>
+    <p><a class="button" :href="`/user/${shop.name.trim()}/addItem`">Legg til ny antikvitet</a></p>
 
   </div>
 </template>

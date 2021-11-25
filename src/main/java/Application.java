@@ -26,7 +26,7 @@ public class Application{
         app.get("/enduser/", new VueComponent("mainpage-enduser"));
         app.get("/user/registershop/", new VueComponent("user-create-shop"));
         app.get("/user/:shop-id/", new VueComponent("user-shop-detail"));
-       // app.get("/user/:shop-id/additem/", new VueComponent("user-shop-add-item"));
+        app.get("/user/:shop-id/addItem", new VueComponent("user-shop-add-item"));
 
 
         //post
