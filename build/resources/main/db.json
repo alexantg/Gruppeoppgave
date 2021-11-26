@@ -1,9 +1,16 @@
 [ {
-  "name" : "Test",
-  "email" : "epost@gmail.com",
-  "address" : "testadresse 100 "
-}, {
-  "name" : "Test",
-  "email" : "Test",
-  "address" : "Test"
+  "name" : "Random",
+  "email" : "Email",
+  "address" : "Adress",
+  "items" : [ {
+    "name" : "Test",
+    "description" : "Test",
+    "pictureUrl" : null,
+    "price" : "Test"
+  }, {
+    "name" : "Test 2",
+    "description" : "Test 2",
+    "pictureUrl" : null,
+    "price" : "Test 2"
+  } ]
 } ]

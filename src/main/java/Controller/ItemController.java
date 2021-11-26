@@ -53,15 +53,14 @@ public class ItemController {
         String name;
         String description;
         String pictureUrl;
-        double price;
+        String price;
 
         name = context.formParam("itemName");
         description = context.formParam("description");
         pictureUrl = context.formParam("pictureUrl");
-        price = Double.parseDouble(context.formParam("price"));
+        price = context.formParam("price");
 
-        Item newItem = new Item(name, description, price, pictureUrl);
-        return newItem;
+        return new Item(name, description, price, pictureUrl);
     }
 
       /*  public void getAllItems(Context context) {

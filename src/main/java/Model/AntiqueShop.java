@@ -6,9 +6,7 @@ public class AntiqueShop {
         private String name;
         private String email;
         private String address;
-        private ArrayList<Item> items;
-
-
+        private ArrayList<Item> items = new ArrayList<Item>();
 
     public AntiqueShop(){
 
@@ -52,7 +50,12 @@ public class AntiqueShop {
         this.items = items;
     }
     public void addItem(Item item){
-        this.items.add(item);
+       try{
+           this.items.add(item);
+       }
+       catch (NullPointerException e){
+            e.printStackTrace();
+       }
     }
 
 }

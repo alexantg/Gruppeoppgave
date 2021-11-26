@@ -1,6 +1,21 @@
 [ {
-  "name" : "Store name",
+  "name" : "Random",
   "email" : "Email",
   "address" : "Adress",
-  "items" : null
+  "items" : [ {
+    "name" : "Test",
+    "description" : "Test",
+    "pictureUrl" : null,
+    "price" : "Test"
+  }, {
+    "name" : "Test 2",
+    "description" : "Test 2",
+    "pictureUrl" : null,
+    "price" : "Test 2"
+  }, {
+    "name" : "Test 3",
+    "description" : "Test 3",
+    "pictureUrl" : "Bilde",
+    "price" : "Pris"
+  } ]
 } ]
