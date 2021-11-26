@@ -6,6 +6,8 @@ import org.junit.Test;
 import org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 
+import static org.hamcrest.CoreMatchers.instanceOf;
+
 
 
 import java.util.ArrayList;
@@ -55,6 +57,10 @@ public class AntiqueSystemJSONRepTest {
 
     @Test
     public void testGetShop() {
+        AntiqueShop shop = new AntiqueShop("Test","Test","Test");
+        AntiqueSystemJSONRep rep = mock(AntiqueSystemJSONRep.class);
+
+        assertThat(shop, instanceOf(AntiqueShop.class));
 
     }
 
@@ -66,7 +72,9 @@ public class AntiqueSystemJSONRepTest {
         testList.add(shopOne);
         testList.add(shopTwo);
 
-
+        //Checking to see if return value is an array list
+        AntiqueSystemJSONRep rep = mock(AntiqueSystemJSONRep.class);
+        assertThat(testList, instanceOf(ArrayList.class));
     }
 
     @Test

@@ -14,7 +14,7 @@ import java.util.HashMap;
 public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     private String fileName;
     ArrayList<AntiqueShop> shopsFromFile = new ArrayList<>();
-    ArrayList<Item> itemsFromFile = new ArrayList<>();
+    //ArrayList<Item> itemsFromFile = new ArrayList<>();
    // private HashMap<String, Item> itemHashMap = new HashMap<>();
 
     public AntiqueSystemJSONRep(String fileName) {
@@ -58,7 +58,7 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
 
     }
 
-    public ArrayList<Item> readItemsFromFile() {
+  /*  public ArrayList<Item> readItemsFromFile() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
 
@@ -70,7 +70,7 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
         }
         return itemsFromFile;
 
-    }
+    }*/
 
     @Override
     public AntiqueShop getShop(String shopName){
@@ -94,9 +94,12 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     }
 
     @Override
-    public void createItem(Item newItem){
-        itemsFromFile.add(newItem);
-        printItemsToFile(itemsFromFile);
+    public void createItem(String shopName,Item newItem){
+        for(AntiqueShop shop : shopsFromFile){
+            if(shop.getName().equals(shopName)){
+                shop.addItem(newItem);
+            }
+        }
     }
 
   /*  public HashMap<String, Item> readFromJSON(String fileName) {

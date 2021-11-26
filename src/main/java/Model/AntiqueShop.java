@@ -8,6 +8,8 @@ public class AntiqueShop {
         private String address;
         private ArrayList<Item> items;
 
+
+
     public AntiqueShop(){
 
     }
@@ -40,6 +42,17 @@ public class AntiqueShop {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
+    }
+    public void addItem(Item item){
+        this.items.add(item);
     }
 
 }

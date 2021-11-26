@@ -14,20 +14,6 @@ public class ItemController {
         this.iAntiqueSystemRep = iAntiqueSystemRep;
     }
 
-  /*  public void getAllItems(Context context) {
-        ArrayList<Item> allItems = iAntiqueSystemRep.getAllItems();
-
-        context.json(allItems);
-    } */
-
-   /* public void getOneItem(Context context) {
-        String itemID = context.pathParam(":item-id");
-
-        Item aItem = iAntiqueSystemRep.getOneItem(itemID);
-
-        context.json(aItem);
-    } */
-
 
     public void getShop(Context context){
         String name = context.pathParam("shop-id");
@@ -58,7 +44,8 @@ public class ItemController {
     }
 
     public void createItem(Context context){
-        iAntiqueSystemRep.createItem(dataFromInputItem(context));
+        String shopName = context.pathParam("shop-id");
+        iAntiqueSystemRep.createItem(shopName,dataFromInputItem(context));
         context.redirect("/user/");
     }
 
@@ -76,5 +63,19 @@ public class ItemController {
         Item newItem = new Item(name, description, price, pictureUrl);
         return newItem;
     }
+
+      /*  public void getAllItems(Context context) {
+        ArrayList<Item> allItems = iAntiqueSystemRep.getAllItems();
+
+        context.json(allItems);
+    } */
+
+   /* public void getOneItem(Context context) {
+        String itemID = context.pathParam(":item-id");
+
+        Item aItem = iAntiqueSystemRep.getOneItem(itemID);
+
+        context.json(aItem);
+    } */
 
 }
