@@ -20,6 +20,7 @@ public class AntiqueShopController {
         context.json(iAntiqueSystemRep.getAllShops());
     }
 
+    // method for creating shops
     public void createShop(Context context){
         iAntiqueSystemRep.createShop(dataFromInputShop(context));
         context.redirect("/user/");
