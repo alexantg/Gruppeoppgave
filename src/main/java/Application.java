@@ -1,3 +1,4 @@
+import Controller.AntiqueShopController;
 import Repository.AntiqueSystemJSONRep;
 import Controller.ItemController;
 import io.javalin.Javalin;
@@ -15,6 +16,7 @@ public class Application{
         app.config.enableWebjars();
 
         AntiqueSystemJSONRep iAntiqueSystemJSONRep = new AntiqueSystemJSONRep("src/main/resources/db.json");
+        AntiqueShopController antiqueShopController = new AntiqueShopController(iAntiqueSystemJSONRep);
         ItemController itemController = new ItemController(iAntiqueSystemJSONRep);
 
         iAntiqueSystemJSONRep.readShopsFromFile();
@@ -30,18 +32,12 @@ public class Application{
 
 
         //post
-        app.post("api/user/createshop",itemController::createShop);
+        app.post("api/user/createshop",antiqueShopController::createShop);
         app.post("api/user/:shop-id/createItem", itemController::createItem);
 
         //Get-requests
-        app.get("api/shops", itemController::getAllShops);
-        app.get("api/user/:shop-id", itemController::getShop);
+        app.get("api/shops", antiqueShopController::getAllShops);
+        app.get("api/user/:shop-id", antiqueShopController::getShop);
 
-      /*  app.get("api/item/", new Handler(){
-            @Override
-            public void handle(@NotNull Context context) throws Exception {
-                itemController.getAllItems(context);
-            }
-        });*/
     }
 }

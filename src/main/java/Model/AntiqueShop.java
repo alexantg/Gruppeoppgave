@@ -43,12 +43,13 @@ public class AntiqueShop {
     }
 
     public ArrayList<Item> getItems() {
-        return items;
+        return new ArrayList<>(items);
     }
 
     public void setItems(ArrayList<Item> items) {
         this.items = items;
     }
+
     public void addItem(Item item){
        try{
            this.items.add(item);

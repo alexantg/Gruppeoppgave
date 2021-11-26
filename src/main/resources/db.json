@@ -18,4 +18,14 @@
     "pictureUrl" : "Bilde",
     "price" : "Pris"
   } ]
+}, {
+  "name" : "Butikk 2",
+  "email" : "butikk@gmail.com",
+  "address" : "Veien 2",
+  "items" : [ ]
+}, {
+  "name" : "Butikk 3 ",
+  "email" : "butikk3@gmail.com",
+  "address" : "Veien 3",
+  "items" : [ ]
 } ]

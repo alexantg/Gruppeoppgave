@@ -15,6 +15,7 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     private String fileName;
     ArrayList<AntiqueShop> shopsFromFile = new ArrayList<>();
 
+
     public AntiqueSystemJSONRep(String fileName) {
         this.fileName = fileName;
     }
@@ -73,6 +74,17 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
             }
         }
         printShopsToFile(shopsFromFile);
+    }
+
+    // Disse metodene må implementeres for å hente ut items
+    @Override
+    public ArrayList<Item> getAllItems(String shopName) {
+        return null;
+    }
+
+    @Override
+    public Item getOneItem(String itemName) {
+        return null;
     }
 }
 
