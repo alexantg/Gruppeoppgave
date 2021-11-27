@@ -1,31 +1,16 @@
 [ {
-  "name" : "Random",
-  "email" : "Email",
-  "address" : "Adress",
+  "name" : "Test Store",
+  "email" : "test@gmail.com",
+  "address" : "Testveien 108",
   "items" : [ {
-    "name" : "Test",
-    "description" : "Test",
-    "pictureUrl" : null,
-    "price" : "Test"
+    "name" : "Antikvitet 1",
+    "description" : "Fin antikvitet",
+    "pictureUrl" : "bilde",
+    "price" : "2300"
   }, {
-    "name" : "Test 2",
-    "description" : "Test 2",
-    "pictureUrl" : null,
-    "price" : "Test 2"
-  }, {
-    "name" : "Test 3",
-    "description" : "Test 3",
-    "pictureUrl" : "Bilde",
-    "price" : "Pris"
+    "name" : "Antikvitet 2",
+    "description" : "enda finere antikvitet ",
+    "pictureUrl" : "bilde2",
+    "price" : "40000"
   } ]
-}, {
-  "name" : "Butikk 2",
-  "email" : "butikk@gmail.com",
-  "address" : "Veien 2",
-  "items" : [ ]
-}, {
-  "name" : "Butikk 3 ",
-  "email" : "butikk3@gmail.com",
-  "address" : "Veien 3",
-  "items" : [ ]
 } ]

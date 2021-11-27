@@ -79,6 +79,11 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     // Disse metodene må implementeres for å hente ut items
     @Override
     public ArrayList<Item> getAllItems(String shopName) {
+        for(AntiqueShop s : shopsFromFile){
+            if(s.getName().equals(shopName)){
+                return s.getItems();
+            }
+        }
         return null;
     }
 

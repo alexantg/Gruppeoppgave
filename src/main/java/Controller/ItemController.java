@@ -20,6 +20,11 @@ public class ItemController {
         context.redirect("/user/");
     }
 
+    public void getAllItems(Context context){
+        String shopName  = context.pathParam("shop-id");
+        context.json(iAntiqueSystemRep.getAllItems(shopName));
+    }
+
     public Item dataFromInputItem(Context context){
         String name;
         String description;
