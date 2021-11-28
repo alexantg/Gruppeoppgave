@@ -4,11 +4,10 @@
       <center> <h2>Registered shops</h2></center>
       <center> <ul class="shops-overview-list">
         <li v-for="shop in shops">
-          <a :href="`/user/${shop.name.trim()}`" class="link-to-shop-details">
             <div class="single-shop-container" >
               <h1>{{shop.name}}</h1>
+              <p>{{shop.address}}</p>
             </div>
-          </a>
         </li>
       </ul>
       </center>

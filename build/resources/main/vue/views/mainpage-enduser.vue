@@ -1,13 +1,10 @@
-<template id="mainpage-user">
+<template id="mainpage-enduser">
   <div>
     <div>
       <center> <h2>Registered shops</h2></center>
-      <center>
-        <p><a class="button" href="registershop/">Registrer ny butikk</a></p>
-      </center>
       <center> <ul class="shops-overview-list">
         <li v-for="shop in shops">
-          <a :href="`/user/${shop.name.trim()}`" class="link-to-shop-details">
+          <a :href="`/enduser/${shop.name.trim()}`">
             <div class="single-shop-container" >
               <h1>{{shop.name}}</h1>
             </div>
@@ -20,8 +17,8 @@
 </template>
 
 <script>
-Vue.component("mainpage-user",
-    {template: "#mainpage-user",
+Vue.component("mainpage-enduser",
+    {template: "#mainpage-enduser",
       data: () => ({
         shops: [],
       }),
@@ -42,23 +39,9 @@ li{
   list-style-type: none;
 }
 
-.shop-overview-list{
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .shop-overview-list li{
   padding: 10px;
 
-}
-
-.link-to-shop-details-details{
-  width: 400px;
-  height:100px;
-  text-decoration: none;
-  color: black;
 }
 
 div.single-shop-container{

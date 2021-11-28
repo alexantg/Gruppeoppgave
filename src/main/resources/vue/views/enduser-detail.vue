@@ -5,7 +5,11 @@
       <center> <ul class="item-list">
         <li v-for="item in items">
             <div class="single-item-container" >
-              <h1>{{item.description}}</h1>
+              <h1>{{item.name}}</h1>
+              <p>{{item.description}}</p>
+              <p>{{item.price}}</p>
+              <img v-if="item.pictureUrl" class="cover-image" v-bind:src="item.pictureUrl">
+             <p><a class="button">Kjøp nå</a></p>
             </div>
         </li>
       </ul>
@@ -62,7 +66,7 @@ div.single-item-container:hover{
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
-img.cover-image-frontpage {
+img.cover-image{
   width: 125px;
   height: 125px;
   padding-bottom: 20px;
@@ -91,5 +95,8 @@ h2{
   text-decoration: none;
   color: black;
 
+}
+p{
+  padding-bottom: 5px;
 }
 </style>

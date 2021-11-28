@@ -3,14 +3,14 @@
   "email" : "test@gmail.com",
   "address" : "Testveien 108",
   "items" : [ {
-    "name" : "Antikvitet 1",
-    "description" : "Fin antikvitet",
-    "pictureUrl" : "bilde",
-    "price" : "2300"
+    "name" : "Vase",
+    "description" : "Meget fin",
+    "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/9/91/Portland_Vase_V%26A.jpg",
+    "price" : "2900"
   }, {
-    "name" : "Antikvitet 2",
-    "description" : "enda finere antikvitet ",
-    "pictureUrl" : "bilde2",
-    "price" : "40000"
+    "name" : "Maleri",
+    "description" : "Gammelt, men ok",
+    "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Durer_Young_Hare.jpg/800px-Durer_Young_Hare.jpg",
+    "price" : "6500"
   } ]
 } ]
