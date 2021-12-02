@@ -3,6 +3,7 @@
       <ul class="navbar">
         <li><a href="/"> Go back to login page</a></li>
       </ul>
+
       <center> <h2>Antiques</h2></center>
       <center> <ul class="item-list">
         <li v-for="item in items">
@@ -59,17 +60,15 @@ Vue.component("enduser-detail",
   background-color: #111;
 }
 
-
-li{
+li {
   list-style-type: none;
 }
 
-.item-list li{
+.item-list li {
   padding: 10px;
-
 }
 
-div.single-item-container{
+div.single-item-container {
   overflow: hidden;
   width: 300px;
   background-color: white;
@@ -80,7 +79,7 @@ div.single-item-container{
   margin: 20px;
 }
 
-div.single-item-container:hover{
+div.single-item-container:hover {
   opacity: 1.0;
   overflow: hidden;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
@@ -88,7 +87,7 @@ div.single-item-container:hover{
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
-img.cover-image{
+img.cover-image {
   width: 125px;
   height: 125px;
   padding-bottom: 20px;
@@ -103,22 +102,23 @@ img.cover-image{
   border-radius: 15px;
 }
 
-.button a{
+.button a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 
-.button:hover{
+.button:hover {
   border: 2px solid black;
 }
+
 h2{
   font-size: 40px;
   text-decoration: none;
   color: black;
-
 }
-p{
+
+p {
   padding-bottom: 5px;
 }
 </style>
