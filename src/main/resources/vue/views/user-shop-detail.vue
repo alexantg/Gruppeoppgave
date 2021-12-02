@@ -1,10 +1,10 @@
 <template id="shop-detail">
   <div>
-
+    <center>
     <h1>{{shop.name}}</h1>
-
+    <p>{{shop.address}}</p>
     <p><a class="button" :href="`/user/${shop.name.trim()}/add`">Legg til ny antikvitet</a></p>
-
+    </center>
   </div>
 </template>
 
@@ -32,7 +32,11 @@
 
 <style>
 h1{
+  font-size: 50px;
   color: black;
+}
+p{
+  font-size: 20px;
 }
 
 </style>

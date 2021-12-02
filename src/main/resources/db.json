@@ -13,4 +13,9 @@
     "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Durer_Young_Hare.jpg/800px-Durer_Young_Hare.jpg",
     "price" : "6500"
   } ]
+}, {
+  "name" : "Second test store",
+  "email" : "test2@outlook.com",
+  "address" : "Testveien 66",
+  "items" : [ ]
 } ]
