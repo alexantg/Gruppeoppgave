@@ -84,13 +84,5 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
         }
         return null;
     }
-
-    /*
-    @Override
-    public Item getOneItem(String shopName, String itemName) {
-        return getShop(shopName).finditemByName(itemName);
-    }
-
-     */
 }
 

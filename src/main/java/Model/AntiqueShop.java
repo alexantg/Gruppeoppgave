@@ -59,12 +59,4 @@ public class AntiqueShop {
        }
     }
 
-    public Item finditemByName(String itemName) {
-        for(Item aItem : items) {
-            if(aItem.getName().equals(name)) {
-                return aItem;
-            }
-        }
-        return null;
-    }
 }
