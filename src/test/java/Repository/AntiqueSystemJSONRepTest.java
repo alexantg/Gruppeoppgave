@@ -1,6 +1,7 @@
 package Repository;
 
 import Model.AntiqueShop;
+import Model.Item;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.mockito.Mockito.*;
@@ -34,7 +35,13 @@ public class AntiqueSystemJSONRepTest {
 
     @Test
     public void testPrintItemsToFile() {
+        Item itemOne = new Item("Test","Test", "Test", "Test");
+        Item itemTwo = new Item("TestTwo", "TestTwo", "TestTwo", "TestTwo");
+        ArrayList<Item> testListItems = new ArrayList<>();
+        testListItems.add(itemOne);
+        testListItems.add(itemTwo);
 
+        AntiqueSystemJSONRep rep = mock(AntiqueSystemJSONRep.class);
     }
 
     @Test

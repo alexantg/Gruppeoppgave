@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     private String fileName;
@@ -67,7 +66,7 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
     }
 
     @Override
-    public void createItem(String shopName,Item newItem){
+    public void createItem(String shopName, Item newItem){
         for(AntiqueShop shop : shopsFromFile){
             if(shop.getName().equals(shopName)){
                 shop.addItem(newItem);
@@ -76,7 +75,6 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
         printShopsToFile(shopsFromFile);
     }
 
-    // Disse metodene må implementeres for å hente ut items
     @Override
     public ArrayList<Item> getAllItems(String shopName) {
         for(AntiqueShop s : shopsFromFile){
@@ -87,9 +85,12 @@ public class AntiqueSystemJSONRep implements IAntiqueSystemRep {
         return null;
     }
 
+    /*
     @Override
-    public Item getOneItem(String itemName) {
-        return null;
+    public Item getOneItem(String shopName, String itemName) {
+        return getShop(shopName).finditemByName(itemName);
     }
+
+     */
 }
 

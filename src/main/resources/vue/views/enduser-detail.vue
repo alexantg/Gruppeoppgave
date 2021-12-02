@@ -1,6 +1,8 @@
 <template id="enduser-detail">
-  <div>
     <div>
+      <ul class="navbar">
+        <li><a href="/"> Go back to login page</a></li>
+      </ul>
       <center> <h2>Antiques</h2></center>
       <center> <ul class="item-list">
         <li v-for="item in items">
@@ -15,7 +17,6 @@
       </ul>
       </center>
     </div>
-  </div>
 </template>
 
 <script>
@@ -32,12 +33,33 @@ Vue.component("enduser-detail",
               this.items = res;
             })
             .catch(() => alert("Error while fetching saved items"));
-         //console.log(items);
       },
     });
 
 </script>
 <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: slategrey;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+
 li{
   list-style-type: none;
 }

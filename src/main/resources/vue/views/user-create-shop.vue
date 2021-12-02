@@ -1,5 +1,10 @@
 <template id="user-create-shop">
   <div class="app">
+
+    <ul class="navbar">
+      <li><a href="/"> Go back to login page</a></li>
+    </ul>
+
     <center> <h1>Registrer ny antikkbutikk</h1>
       <form class="form-style" :action=`/api/user/createshop` method="post">
         <p>
@@ -38,6 +43,27 @@ Vue.component("user-create-shop", {
 </script>
 
 <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: slategrey;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
 h1 {
   color: black;
 }

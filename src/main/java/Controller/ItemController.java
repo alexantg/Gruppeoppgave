@@ -25,6 +25,16 @@ public class ItemController {
         context.json(iAntiqueSystemRep.getAllItems(shopName));
     }
 
+    /* henter ut en item
+    public void getOneItem(Context context){
+        String shopName = context.pathParam("shop-id");
+        String itemName = context.pathParam("item-id");
+
+        Item aItem = iAntiqueSystemRep.getOneItem(shopName, itemName);
+
+        context.json(aItem);
+    } */
+
     public Item dataFromInputItem(Context context){
         String name;
         String description;
@@ -38,21 +48,5 @@ public class ItemController {
 
         return new Item(name, description, price, pictureUrl);
     }
-
-    // Disse metodene må implementeres for å hente ut items
-
-      /*  public void getAllItems(Context context) {
-        ArrayList<Item> allItems = iAntiqueSystemRep.getAllItems();
-
-        context.json(allItems);
-    } */
-
-   /* public void getOneItem(Context context) {
-        String itemID = context.pathParam(":item-id");
-
-        Item aItem = iAntiqueSystemRep.getOneItem(itemID);
-
-        context.json(aItem);
-    } */
 
 }
