@@ -1,15 +1,5 @@
 package Model;
 
-import Model.AntiqueShop;
-import junit.framework.TestCase;
-import org.junit.Test;
-import org.mockito.Mockito.*;
-import static org.junit.Assert.*;
-
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.mockito.Mockito.*;
-
-
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
