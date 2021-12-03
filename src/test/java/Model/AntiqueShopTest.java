@@ -7,6 +7,7 @@ import org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.mockito.Mockito.*;
 
 
 import junit.framework.TestCase;
@@ -22,6 +23,9 @@ public class AntiqueShopTest extends TestCase {
     }
 
     public void testTestSetName() {
+        AntiqueShop shop = new AntiqueShop();
+        shop.setName("Test");
+        assertEquals("Test", shop.getName());
     }
 
     public void testGetEmail() {
@@ -31,6 +35,9 @@ public class AntiqueShopTest extends TestCase {
     }
 
     public void testSetEmail() {
+        AntiqueShop shop = new AntiqueShop();
+        shop.setEmail("Testmail@gmail.com");
+        assertEquals("Testmail@gmail.com", shop.getEmail());
     }
 
     public void testGetAddress() {
@@ -40,6 +47,9 @@ public class AntiqueShopTest extends TestCase {
     }
 
     public void testSetAddress() {
+        AntiqueShop shop = new AntiqueShop("Test", "Testmail", "Testaddress");
+        String address = shop.getAddress();
+        assertEquals("Testaddress", address);
     }
 
     public void testGetItems() {
@@ -54,8 +64,21 @@ public class AntiqueShopTest extends TestCase {
     }
 
     public void testSetItems() {
-    }
+        AntiqueShop shop = new AntiqueShop();
+        ArrayList<Item> items = new ArrayList<>();
+        Item item = new Item("Name", "Description", "Price", "PictureURL");
+        items.add(item);
+        shop.setItems(items);
 
+        assertEquals(items, shop.getItems());
+
+
+    }
     public void testAddItem() {
+        AntiqueShop shop = new AntiqueShop();
+        Item item = new Item("Test", "Test", "Test", "Test");
+        shop.addItem(item);
+
+        assertEquals(item, shop.getItems().get(0));
     }
 }
