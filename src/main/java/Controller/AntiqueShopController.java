@@ -2,7 +2,9 @@ package Controller;
 
 import Model.AntiqueShop;
 import Repository.IAntiqueSystemRep;
+import io.javalin.http.BadRequestResponse;
 import io.javalin.http.Context;
+import kong.unirest.HttpStatus;
 
 public class AntiqueShopController {
     private IAntiqueSystemRep iAntiqueSystemRep;
@@ -14,10 +16,13 @@ public class AntiqueShopController {
     public void getShop(Context context){
         String name = context.pathParam("shop-id");
         context.json(iAntiqueSystemRep.getShop(name));
+        context.status(HttpStatus.ACCEPTED);
+
     }
 
     public void getAllShops(Context context){
         context.json(iAntiqueSystemRep.getAllShops());
+        context.status(201);
     }
 
     // method for creating shops
