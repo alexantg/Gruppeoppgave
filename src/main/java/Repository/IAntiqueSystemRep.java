@@ -14,5 +14,5 @@ public interface IAntiqueSystemRep {
     void createItem(String shopName,Item newItem);
     ArrayList<Item> getAllItems(String shopName);
 
-    //Item getOneItem(String shopName, String itemName);
+    Item getOneItem(String shopName, String itemName);
 }

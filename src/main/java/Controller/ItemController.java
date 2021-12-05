@@ -25,6 +25,15 @@ public class ItemController {
         context.json(iAntiqueSystemRep.getAllItems(shopName));
     }
 
+    public void getOneItem(Context context){
+        String shopName = context.pathParam("shop-id");
+        String itemName = context.pathParam("item-id");
+
+        Item aItem = iAntiqueSystemRep.getOneItem(shopName, itemName);
+
+        context.json(aItem);
+    }
+
 
     public Item dataFromInputItem(Context context){
         String name;

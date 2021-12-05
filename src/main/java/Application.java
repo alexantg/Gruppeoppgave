@@ -29,12 +29,13 @@ public class Application{
         app.get("/enduser/", new VueComponent("mainpage-enduser"));
         app.get("/enduser/:shop-id/", new VueComponent("enduser-detail"));
 
+        app.get("/enduser/:shop-id/items/:item-id/", new VueComponent("item-detail"));
+
 
         app.get("/user/", new VueComponent("mainpage-user"));
         app.get("/user/registershop/", new VueComponent("user-create-shop"));
         app.get("/user/:shop-id/", new VueComponent("user-shop-detail"));
         app.get("/user/:shop-id/add", new VueComponent("add-item-user"));
-
 
         //post
         app.post("api/user/createshop", antiqueShopController::createShop);
@@ -44,6 +45,8 @@ public class Application{
         app.get("api/items/:shop-id", itemController::getAllItems);
         app.get("api/shops", antiqueShopController::getAllShops);
         app.get("api/user/:shop-id", antiqueShopController::getShop);
+
+        app.get("api/enduser/:shop-id/items/:item-id/", itemController::getOneItem);
 
     }
 }

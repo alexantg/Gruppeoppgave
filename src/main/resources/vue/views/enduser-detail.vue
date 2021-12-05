@@ -12,7 +12,7 @@
               <p>{{item.description}}</p>
               <p>{{item.price}}</p>
               <img v-if="item.pictureUrl" class="cover-image" v-bind:src="item.pictureUrl">
-             <p><a class="button">Kjøp nå</a></p>
+              <p><a class="button" :href="`/enduser/${shopName}/items/${item.name}`">Kjøp nå</a></p>
             </div>
         </li>
       </ul>
@@ -25,9 +25,11 @@ Vue.component("enduser-detail",
     {template: "#enduser-detail",
       data: () => ({
         items: [],
+        shopName: "",
       }),
       created(){
         const shopId = this.$javalin.pathParams["shop-id"]
+        this.shopName = shopId;
         fetch(`/api/items/${shopId}`)
             .then(res => res.json())
             .then(res =>{
