@@ -1,5 +1,5 @@
 [ {
-  "name" : "Test Store",
+  "name" : "TestStore",
   "email" : "test@gmail.com",
   "address" : "Testveien 108",
   "items" : [ {
