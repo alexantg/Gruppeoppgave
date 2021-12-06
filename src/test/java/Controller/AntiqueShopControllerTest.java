@@ -9,8 +9,7 @@ import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+
 
 public class AntiqueShopControllerTest extends TestCase {
     Javalin app = Javalin.create();

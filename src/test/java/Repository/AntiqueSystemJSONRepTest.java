@@ -103,5 +103,9 @@ public class AntiqueSystemJSONRepTest {
         assertEquals(expected, rep.getAllItems("Test"));
 
     }
+    @Test
+    public void testGetOneItem(){
+
+    }
 
 }
