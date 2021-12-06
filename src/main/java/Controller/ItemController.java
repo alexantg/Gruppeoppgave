@@ -34,17 +34,17 @@ public class ItemController {
         context.json(aItem);
     }
 
-
     public Item dataFromInputItem(Context context){
         String name;
         String description;
         String pictureUrl;
-        String price;
 
         name = context.formParam("itemName");
         description = context.formParam("description");
         pictureUrl = context.formParam("pictureUrl");
-        price = context.formParam("price");
+
+        String priceS = context.formParam("price");
+        double price = Double.parseDouble(priceS);
 
         return new Item(name, description, price, pictureUrl);
     }

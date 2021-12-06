@@ -25,9 +25,11 @@ Vue.component("enduser-detail",
     {template: "#enduser-detail",
       data: () => ({
         items: [],
+        shopName: "",
       }),
       created(){
         const shopId = this.$javalin.pathParams["shop-id"]
+        this.shopName = shopId;
         fetch(`/api/items/${shopId}`)
             .then(res => res.json())
             .then(res =>{

@@ -4,12 +4,12 @@ public class Item {
     private String name;
     private String description;
     private String pictureUrl;
-    private String price;
+    private double price;
 
     public Item() {
     }
 
-    public Item(String name, String description, String price, String pictureUrl) {
+    public Item(String name, String description, double price, String pictureUrl) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -32,11 +32,11 @@ public class Item {
         this.description = description;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

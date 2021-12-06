@@ -6,8 +6,9 @@
           <div class="single-item-container" >
             <h1>{{item.name}}</h1>
             <p>{{item.description}}</p>
-            <p>{{item.price}}</p>
+            <p>Pris: {{item.price}}</p>
             <img v-if="item.pictureUrl" class="cover-image" v-bind:src="item.pictureUrl">
+            <p><a class="button">Gi bud</a></p>
           </div>
         </li>
       </ul>

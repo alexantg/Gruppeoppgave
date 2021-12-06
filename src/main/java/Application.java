@@ -47,6 +47,5 @@ public class Application{
         app.get("api/user/:shop-id", antiqueShopController::getShop);
 
         app.get("api/enduser/:shop-id/items/:item-id/", itemController::getOneItem);
-
     }
 }
