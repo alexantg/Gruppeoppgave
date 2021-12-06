@@ -33,4 +33,9 @@
   "email" : "test2@outlook.com",
   "address" : "Testveien 66",
   "items" : [ ]
+}, {
+  "name" : null,
+  "email" : null,
+  "address" : null,
+  "items" : [ ]
 } ]

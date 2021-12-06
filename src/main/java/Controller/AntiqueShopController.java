@@ -15,6 +15,9 @@ public class AntiqueShopController {
 
     public void getShop(Context context){
         String name = context.pathParam("shop-id");
+        if(name ==null || name.length()<10){
+            context.status(HttpStatus.BAD_REQUEST);
+        }
         context.json(iAntiqueSystemRep.getShop(name));
         context.status(HttpStatus.ACCEPTED);
 
@@ -29,6 +32,7 @@ public class AntiqueShopController {
     public void createShop(Context context){
         iAntiqueSystemRep.createShop(dataFromInputShop(context));
         context.redirect("/user/");
+        context.status(202);
     }
 
     //get data from form-input when creating
