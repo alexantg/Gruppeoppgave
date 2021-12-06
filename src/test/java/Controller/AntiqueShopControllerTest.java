@@ -44,7 +44,7 @@ public class AntiqueShopControllerTest extends TestCase {
         HttpResponse<JsonNode> response = Unirest.get("http://localhost:8000/api/user/TestStore").asJson();
         assertThat(response.getStatus()).isEqualTo(202);
 
-
+        app.stop();
     }
 
     public void testCreateShop() {
@@ -58,6 +58,8 @@ public class AntiqueShopControllerTest extends TestCase {
 
         HttpResponse<JsonNode> response = Unirest.post("http://localhost:8000/api/user/createshop").asJson();
         assertThat(response.getStatus()).isEqualTo(202);
+
+        app.stop();
     }
 
     public void testDataFromInputShop() {

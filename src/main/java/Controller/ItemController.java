@@ -18,20 +18,28 @@ public class ItemController {
         String shopName = context.pathParam("shop-id");
         iAntiqueSystemRep.createItem(shopName,dataFromInputItem(context));
         context.redirect("/user/");
+        context.status(201);
     }
 
     public void getAllItems(Context context){
         String shopName  = context.pathParam("shop-id");
         context.json(iAntiqueSystemRep.getAllItems(shopName));
+        context.status(201);
     }
 
     public void getOneItem(Context context){
         String shopName = context.pathParam("shop-id");
         String itemName = context.pathParam("item-id");
 
-        Item aItem = iAntiqueSystemRep.getOneItem(shopName, itemName);
+        if(shopName ==null && itemName == null){
+            context.status(404);
+        }
+        else{
+            Item aItem = iAntiqueSystemRep.getOneItem(shopName, itemName);
+            context.json(aItem);
+            context.status(201);
+        }
 
-        context.json(aItem);
     }
 
     public Item dataFromInputItem(Context context){
