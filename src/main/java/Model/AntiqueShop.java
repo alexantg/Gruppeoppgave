@@ -1,10 +1,12 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class AntiqueShop {
-        private int id;
         private String name;
         private String email;
         private String address;
+        private ArrayList<Item> items = new ArrayList<Item>();
 
     public AntiqueShop(){
 
@@ -39,4 +41,31 @@ public class AntiqueShop {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public ArrayList<Item> getItems() {
+        return new ArrayList<>(items);
+    }
+
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
+    }
+
+    public void addItem(Item item){
+       try{
+           this.items.add(item);
+       }
+       catch (NullPointerException e){
+            e.printStackTrace();
+       }
+    }
+
+    public Item findItemByName(String itemName) {
+        for (Item aItem : items) {
+            if (aItem.getName().equals(itemName)) {
+                return aItem;
+            }
+        }
+        return null;
+    }
+
 }

@@ -10,6 +10,7 @@
         <a :href="`/user/${shop.name.trim()}`" class="link-to-shop-details">
           <div class="single-shop-container" >
             <h1>{{shop.name}}</h1>
+            <p>{{shop.address}}</p>
           </div>
         </a>
       </li>
@@ -54,6 +55,12 @@ li{
 
 }
 
+a{
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 .link-to-shop-details-details{
   width: 400px;
   height:100px;
@@ -87,9 +94,14 @@ img.cover-image-frontpage {
   max-height: 280px;
 }
 
+h1{
+  text-decoration: none;
+  font-size: 40px;
+}
+
 .button {
   padding: 15px;
-  margin: 10px;
+  margin: 20px;
   border: 2px solid black;
   color: black;
   border-radius: 15px;

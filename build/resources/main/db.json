@@ -1,17 +1,36 @@
 [ {
-  "name" : "Test",
+  "name" : "TestStore",
   "email" : "test@gmail.com",
-  "address" : "testveien 99"
+  "address" : "Testveien 108",
+  "items" : [ {
+    "name" : "Vase",
+    "description" : "Meget fin",
+    "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/9/91/Portland_Vase_V%26A.jpg",
+    "price" : "2900"
+  }, {
+    "name" : "Maleri",
+    "description" : "Gammelt, men ok",
+    "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Durer_Young_Hare.jpg/800px-Durer_Young_Hare.jpg",
+    "price" : "6500"
+  }, {
+    "name" : "item1",
+    "description" : "a item",
+    "pictureUrl" : "https://bit.ly/3xPNbxD",
+    "price" : "100"
+  } ]
 }, {
-  "name" : "test2",
-  "email" : "testfire@gmail.com",
-  "address" : "testveien 108"
+  "name" : "Another Store",
+  "email" : "random@mail.com",
+  "address" : "123street",
+  "items" : [ {
+    "name" : "Gramofon",
+    "description" : "Fortsatt god lyd!",
+    "pictureUrl" : "https://bit.ly/3ltX3Za",
+    "price" : "1500"
+  } ]
 }, {
-  "name" : "test3",
-  "email" : "test@outlook.com",
-  "address" : "veien 100"
-}, {
-  "name" : "test4 ",
-  "email" : "test",
-  "address" : "test"
+  "name" : "Second test store",
+  "email" : "test2@outlook.com",
+  "address" : "Testveien 66",
+  "items" : [ ]
 } ]

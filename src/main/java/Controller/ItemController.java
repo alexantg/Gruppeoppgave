@@ -14,67 +14,46 @@ public class ItemController {
         this.iAntiqueSystemRep = iAntiqueSystemRep;
     }
 
-  /*  public void getAllItems(Context context) {
-        ArrayList<Item> allItems = iAntiqueSystemRep.getAllItems();
-
-        context.json(allItems);
-    } */
-
-   /* public void getOneItem(Context context) {
-        String itemID = context.pathParam(":item-id");
-
-        Item aItem = iAntiqueSystemRep.getOneItem(itemID);
-
-        context.json(aItem);
-    } */
-
-
-    public void getShop(Context context){
-        String name = context.pathParam("shop-id");
-        context.json(iAntiqueSystemRep.getShop(name));
-    }
-
-    public void getAllShops(Context context){
-        context.json(iAntiqueSystemRep.getAllShops());
-    }
-
-    public void createShop(Context context){
-        iAntiqueSystemRep.createShop(dataFromInputShop(context));
-        context.redirect("/user/");
-    }
-
-    //get data from form-input when creating
-    public AntiqueShop dataFromInputShop(Context context){
-        String name;
-        String email;
-        String address;
-
-        name = context.formParam("shopName");
-        email = context.formParam("email");
-        address = context.formParam("address");
-
-        AntiqueShop shop = new AntiqueShop(name,email,address);
-        return shop;
-    }
-
     public void createItem(Context context){
-        iAntiqueSystemRep.createItem(dataFromInputItem(context));
+        String shopName = context.pathParam("shop-id");
+        iAntiqueSystemRep.createItem(shopName,dataFromInputItem(context));
         context.redirect("/user/");
+        context.status(201);
+    }
+
+    public void getAllItems(Context context){
+        String shopName  = context.pathParam("shop-id");
+        context.json(iAntiqueSystemRep.getAllItems(shopName));
+        context.status(201);
+    }
+
+    public void getOneItem(Context context){
+        String shopName = context.pathParam("shop-id");
+        String itemName = context.pathParam("item-id");
+
+        if(shopName ==null && itemName == null){
+            context.status(404);
+        }
+        else{
+            Item aItem = iAntiqueSystemRep.getOneItem(shopName, itemName);
+            context.json(aItem);
+            context.status(201);
+        }
+
     }
 
     public Item dataFromInputItem(Context context){
         String name;
         String description;
         String pictureUrl;
-        double price;
+        String price;
 
         name = context.formParam("itemName");
         description = context.formParam("description");
         pictureUrl = context.formParam("pictureUrl");
-        price = Double.parseDouble(context.formParam("price"));
+        price = context.formParam("price");
 
-        Item newItem = new Item(name, description, price, pictureUrl);
-        return newItem;
+        return new Item(name, description, price, pictureUrl);
     }
 
 }
