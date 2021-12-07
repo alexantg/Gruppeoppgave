@@ -1,6 +1,6 @@
 <template id="item-detail">
   <div v-if="item">
-    <center> <h1>Kjøp {{item.name}}</h1>
+    <center> <h1> Auksjon av {{item.name}}</h1>
       <center> <ul class="item-list">
         <li>
           <div class="single-item-container" >
@@ -40,5 +40,4 @@ Vue.component("item-detail", {
 h1{
   color:black;
 }
-
 </style>

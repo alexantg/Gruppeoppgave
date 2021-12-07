@@ -28,7 +28,6 @@ public class Application{
 
         app.get("/enduser/", new VueComponent("mainpage-enduser"));
         app.get("/enduser/:shop-id/", new VueComponent("enduser-detail"));
-
         app.get("/enduser/:shop-id/items/:item-id/", new VueComponent("item-detail"));
 
 
@@ -45,7 +44,6 @@ public class Application{
         app.get("api/items/:shop-id", itemController::getAllItems);
         app.get("api/shops", antiqueShopController::getAllShops);
         app.get("api/user/:shop-id", antiqueShopController::getShop);
-
         app.get("api/enduser/:shop-id/items/:item-id/", itemController::getOneItem);
     }
 }

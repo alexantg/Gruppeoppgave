@@ -1,11 +1,11 @@
 <template id="login">
   <div id="app">
-    <center><h1>Login Page</h1>
-    <p><a class="button" href="admin/">Oppstartbedriften (Admin)</a></p>
+    <center><h1>Logg in som </h1>
+    <p><a class="button" href="admin/">Oppstartbedriften (Administrator)</a></p>
     <br>
-    <p><a class="button" href="user/">Butikk eier (User)</a></p>
+    <p><a class="button" href="user/">Butikk eier (Bruker)</a></p>
     <br>
-    <p><a class="button" href="enduser/">Kunde av antikk butikk (Enduser)</a></p>
+    <p><a class="button" href="enduser/">Kunde av antikk butikk (Sluttbruker)</a></p>
     </center>
   </div>
 
