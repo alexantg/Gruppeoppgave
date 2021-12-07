@@ -2,7 +2,7 @@
   <div class="app">
 
     <ul class="navbar">
-      <li><a href="/"> Go back to login page</a></li>
+      <li><a href="/"> Go tilbake til oversikt over brukere</a></li>
     </ul>
 
     <center> <h1>Registrer ny antikkbutikk</h1>

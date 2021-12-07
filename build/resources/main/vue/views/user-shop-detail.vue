@@ -2,7 +2,7 @@
   <div>
 
     <ul class="navbar">
-      <li><a href="/"> Go back to login page</a></li>
+      <li><a href="/"> Go tilbake til oversikt over brukere</a></li>
     </ul>
 
     <h1>{{shop.name}} </h1>

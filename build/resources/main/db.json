@@ -1,36 +1,36 @@
 [ {
-  "name" : "TestStore",
+  "name" : "Sol Antikkbutikk",
   "email" : "test@gmail.com",
-  "address" : "Testveien 108",
+  "address" : "Butikkveien 108",
   "items" : [ {
     "name" : "Vase",
-    "description" : "Meget fin",
+    "description" : "Veldig fin vase, gammel og sjelden! ",
     "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/9/91/Portland_Vase_V%26A.jpg",
     "price" : "2900"
   }, {
     "name" : "Maleri",
-    "description" : "Gammelt, men ok",
+    "description" : "Gammelt, men ok. Ukjent kunster",
     "pictureUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Durer_Young_Hare.jpg/800px-Durer_Young_Hare.jpg",
     "price" : "6500"
   }, {
-    "name" : "item1",
-    "description" : "a item",
+    "name" : "En mystisk gjenstand",
+    "description" : "ukjent hva det er",
     "pictureUrl" : "https://bit.ly/3xPNbxD",
     "price" : "100"
   } ]
 }, {
-  "name" : "Another Store",
-  "email" : "random@mail.com",
-  "address" : "123street",
+  "name" : "Arne sin antikkbutikk",
+  "email" : "Arne@mail.com",
+  "address" : "Tilfeldigvei 10",
   "items" : [ {
     "name" : "Gramofon",
-    "description" : "Fortsatt god lyd!",
+    "description" : "Fortsatt god lyd! ",
     "pictureUrl" : "https://bit.ly/3ltX3Za",
     "price" : "1500"
   } ]
 }, {
-  "name" : "Second test store",
-  "email" : "test2@outlook.com",
+  "name" : "Olas antikviteter",
+  "email" : "OlaAntikk@outlook.com",
   "address" : "Testveien 66",
   "items" : [ ]
 } ]

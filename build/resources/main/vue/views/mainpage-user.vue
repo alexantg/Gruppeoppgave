@@ -1,16 +1,16 @@
 <template id="mainpage-user">
   <div>
   <div>
-    <center> <h2>Registered shops</h2></center>
+    <center> <h2>Registrerte butikker </h2></center>
     <center>
       <p><a class="button" href="registershop/">Registrer ny butikk</a></p>
     </center>
-   <center> <ul class="shops-overview-list">
+   <center> <ul class="shop-overview-list">
       <li v-for="shop in shops">
         <a :href="`/user/${shop.name.trim()}`" class="link-to-shop-details">
           <div class="single-shop-container" >
             <h1>{{shop.name}}</h1>
-            <p>{{shop.address}}</p>
+            <p> Adresse: {{shop.address}}</p>
           </div>
         </a>
       </li>
@@ -61,7 +61,7 @@ a{
   color: black;
 }
 
-.link-to-shop-details-details{
+.link-to-shop-details{
   width: 400px;
   height:100px;
   text-decoration: none;

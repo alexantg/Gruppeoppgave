@@ -1,7 +1,7 @@
 <template id="mainpage-admin">
   <div>
     <div>
-      <center> <h2>Registrerte butikker</h2></center>
+      <center> <h2>(Admin) Registrerte butikker</h2></center>
       <center> <ul class="shop-overview-list">
         <li v-for="shop in shops">
             <div class="single-shop-container" >

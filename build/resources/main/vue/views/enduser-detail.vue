@@ -1,18 +1,17 @@
 <template id="enduser-detail">
     <div>
       <ul class="navbar">
-        <li><a href="/"> Go back to login page</a></li>
+        <li><a href="/"> Go tilbake til oversikt over brukere</a></li>
       </ul>
 
-      <center> <h2>Antiques</h2></center>
+      <center> <h2>Antikviteter</h2></center>
       <center> <ul class="item-list">
         <li v-for="item in items">
             <div class="single-item-container" >
               <h1>{{item.name}}</h1>
-              <p>{{item.description}}</p>
-              <p>{{item.price}}</p>
+              <p>Pris: {{item.price}}</p>
               <img v-if="item.pictureUrl" class="cover-image" v-bind:src="item.pictureUrl">
-              <p><a class="button" :href="`/enduser/${shopName}/items/${item.name}`">Kjøp nå</a></p>
+              <p><a class="button" :href="`/enduser/${shopName}/items/${item.name}`">Se auksjon</a></p>
             </div>
         </li>
       </ul>
@@ -90,8 +89,8 @@ div.single-item-container:hover {
 }
 
 img.cover-image {
-  width: 125px;
-  height: 125px;
+  width: 250px;
+  height: 250px;
   padding-bottom: 20px;
   max-height: 280px;
 }
