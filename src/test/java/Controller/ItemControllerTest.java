@@ -65,5 +65,7 @@ public class ItemControllerTest extends TestCase {
 
     public void testDataFromInputItem() {
 
+        //Metoden "dataFromInputItem" blir indirekte testet i testCreateItem siden createItem metoden bruker dataFromInputItem som en del av sin funksjonalitet
+
     }
 }
