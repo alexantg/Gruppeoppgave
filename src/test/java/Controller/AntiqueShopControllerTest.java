@@ -62,8 +62,8 @@ public class AntiqueShopControllerTest extends TestCase {
     }
 
     public void testDataFromInputShop() {
-        app.start(8000);
 
+        //Metoden "dataFromInputShop" blir indirekte testet i testCreateShop siden createShop metoden bruker dataFromInputshop som en del av sin funksjonalitet
 
     }
 }
